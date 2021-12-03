@@ -1,0 +1,44 @@
+<style>
+    .cmp-footer__content__items {
+        display: inline-block;
+        color: brown;
+    }
+
+    .cmp-footer__text {
+        color: brown;
+    }
+</style>
+
+<div class="cmp-footer" data-sly-use.model="com.aemsite.core.models.Footer">
+    <!-- <div class="cmp-footer__initialcontent" data-sly-test="${properties.links}"></div> -->
+    <div class="cmp-footer__content" data-sly-list.outerGroup="${model.outerGroup}">
+        <div class="cmp-footer__content__items" data-sly-list.innerGroup="${outerGroup.innerGroup}">
+            <ul>
+                <li>
+                    <a class="cmp-footer__text" href="">${innerGroup.links}</a><br>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<div>
+    <ul>
+        <li>
+            <h1>
+                ${properties.title}
+            </h1>
+        </li>
+    </ul>
+
+</div>
+<ul data-sly-list.images="${properties.innerGroup}">
+    <li>
+        <div>
+            <img src="${images.file}">
+            <a class="cmp-image--link" href="${images.linkURL}">
+            </a>
+
+        </div>
+    </li>
+</ul>
