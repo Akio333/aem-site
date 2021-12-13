@@ -7,6 +7,9 @@
     <page-content/>
     <xf-web-variation/>
     <rep:policy/>
+<<<<<<< HEAD
     <homepage-templet/>
     <testtemplet/>
+=======
+>>>>>>> origin/bharath
 </jcr:root>
