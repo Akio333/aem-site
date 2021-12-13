@@ -1,0 +1,150 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2021 Adobe
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+
+<style>
+  /* .cmp-teaser {} */
+
+  .cmp-teaser--left .cmp-teaser {
+
+    background-color: transparent;
+    height: 20rem;
+    background-color: #f3f3f3;
+  }
+
+  .cmp-teaser--right .cmp-teaser {
+
+    background-color: transparent;
+    height: 20rem;
+    background-color: #f3f3f3;
+    cursor: pointer;
+  }
+
+
+
+  .cmp-teaser:hover {
+    box-shadow: 10px 10px #999;
+
+  }
+
+
+  .cmp-teaser--right .cmp-teaser__image {
+
+    margin-left: 43rem;
+    padding: 20px;
+    width: 30rem;
+    /* border: 2px solid blue; */
+
+  }
+
+  .cmp-teaser--left .cmp-teaser__image {
+    width: fit-content;
+    margin-right: 30rem;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+
+  }
+
+  .cmp-teaser--right .cmp-teaser__content {
+    font: 1.25rem/1.5 ubuntu-bd, Verdana, Arial, sans-serif;
+    padding-left: 2.625rem;
+    padding-top: 0.625rem;
+    margin-right: 35rem;
+    margin-top: -20rem;
+    /* border: 2px solid red; */
+  }
+
+  .cmp-teaser--left .cmp-teaser__content {
+    font: 1.25rem/1.5 ubuntu-bd, Verdana, Arial, sans-serif;
+    margin-left: 31rem;
+    margin-top: -24rem;
+    padding-right: 0.625rem;
+    padding-top: 0.625rem;
+    /* border: 2px solid red; */
+  }
+
+  .cmp-teaser__pretitle {}
+
+  .cmp-teaser__title {
+
+    color: #2b0a3d;
+
+  }
+
+  .cmp-teaser__title-link {
+
+    font: 1.5rem/1.5 ubuntu-bd, Verdana, Arial, sans-serif;
+    color: #2b0a3d;
+    text-decoration: none;
+    font-weight: bold;
+
+  }
+
+  .cmp-teaser--left .cmp-teaser__title-link:hover {
+    color: #2b0a3d;
+    text-decoration: underline;
+  }
+
+  .cmp-teaser__title-link:hover {
+    color: #0070ad;
+    text-decoration: underline;
+  }
+
+  .cmp-teaser__description {}
+
+  .cmp-teaser__action-container {
+    margin-top: 9rem;
+  }
+
+
+  .cmp-teaser__action-link {
+    border-radius: 50%;
+    border: 2px solid #0070ad;
+    text-decoration: none;
+    padding: 0.25rem 0.625rem;
+    font-size: 1.25rem;
+    border-radius: 50;
+
+  }
+
+  .cmp-teaser__action-link:hover {
+    background-color: #0070ad;
+    color: white;
+    text-decoration: none;
+
+  }
+
+  .cmp-teaser__action-container {
+    margin-top: 6rem;
+    margin-right: 2rem;
+  }
+</style>
+<div data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+  data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-use.imageTemplate="image.html"
+  data-sly-use.pretitleTemplate="pretitle.html" data-sly-use.titleTemplate="title.html"
+  data-sly-use.descriptionTemplate="description.html" data-sly-use.actionsTemplate="actions.html"
+  data-sly-test.hasContent="${teaser.imageResource || teaser.pretitle || teaser.title || teaser.description || teaser.actions.size > 0}"
+  id="${teaser.id}" class="cmp-teaser${!wcmmode.disabled && teaser.imageResource ? ' cq-dd-image' : ''}"
+  data-cmp-data-layer="${teaser.data.json}">
+  <sly data-sly-call="${imageTemplate.image @ teaser=teaser}"></sly>
+  <div class="cmp-teaser__content">
+    <sly data-sly-call="${pretitleTemplate.pretitle @ teaser=teaser}"></sly>
+    <sly data-sly-call="${titleTemplate.title @ teaser=teaser}"></sly>
+    <sly data-sly-call="${descriptionTemplate.description @ teaser=teaser}"></sly>
+    <sly data-sly-call="${actionsTemplate.actions @ teaser=teaser}"></sly>
+  </div>
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-teaser'}"></sly>

@@ -22,4 +22,14 @@
 </sly>
 <sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
     data-sly-call="${clientlib.css @ categories='aemsite.footer'}" />
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='aemsite.languagenavigation'}" />
+</sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='aemsite.teaser'}" />
+</sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='aemsite.search'}" />
+</sly>
+
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}" />
