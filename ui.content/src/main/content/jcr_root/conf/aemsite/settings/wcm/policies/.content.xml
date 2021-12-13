@@ -34,9 +34,9 @@
                     jcr:title="Content Image"
                     sling:resourceType="wcm/core/components/policy/policy"
                     allowedRenditionWidths="[320,480,600,800,1024,1200,1600]"
-                    disableLazyLoading="false"
                     allowUpload="false"
                     altValueFromDAM="true"
+                    disableLazyLoading="false"
                     displayPopupTitle="true"
                     isDecorative="false"
                     jpegQuality="{Long}85"
@@ -185,6 +185,32 @@
                     type="h2">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_641528232375303>
+                <policy_1014571450072600
+                    jcr:lastModified="{Date}2021-12-13T09:22:01.969+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Title"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowedTypes="[h1,h2,h3,h4,h5,h6]"
+                    linkDisabled="false"
+                    type="h1">
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Style"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-title--light"
+                                    cq:styleLabel="Title Light"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-titile--dark"
+                                    cq:styleLabel="Title Dark"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_1014571450072600>
             </title>
             <experiencefragment jcr:primaryType="nt:unstructured">
                 <policy_header
@@ -207,10 +233,14 @@
             <container jcr:primaryType="nt:unstructured">
                 <policy_1574694950110
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2021-11-30T09:25:07.265+05:30"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:AEM Site - Content,/apps/aemsite/components/form/container,group:AEM Site - Structure]">
+                    backgroundColorEnabled="true"
+                    components="[/libs/wcm/foundation/components/responsivegrid,group:AEM Site - Content,/apps/aemsite/components/form/container,group:AEM Site - Structure]"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -237,10 +267,15 @@
                 </policy_1574694950110>
                 <policy_1574695586800
                     jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2021-12-13T08:50:08.528+05:30"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Page Content"
+                    jcr:title="Hero"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:AEM Site - Content,/apps/aemsite/components/form/container]">
+                    backgroundColorEnabled="true"
+                    components="[/apps/aemsite/components/button,/apps/aemsite/components/teaser,/apps/aemsite/components/title]"
+                    layout="responsiveGrid"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -303,6 +338,156 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
+                <policy_1215088540585600
+                    jcr:lastModified="{Date}2021-11-30T09:43:23.886+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="News Container"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    backgroundColorEnabled="true"
+                    components="[/apps/aemsite/components/teaser,/apps/aemsite/components/title]"
+                    layoutDisabled="false"/>
+                <policy_1215143198560200
+                    jcr:lastModified="{Date}2021-11-30T09:44:14.823+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="News"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    backgroundColorEnabled="true"
+                    components="[/apps/aemsite/components/teaser,/apps/aemsite/components/title]"
+                    layoutDisabled="false"/>
+                <policy_1215220047018500
+                    jcr:lastModified="{Date}2021-11-30T09:45:52.126+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="News Container"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    backgroundColorEnabled="true"
+                    components="[/apps/aemsite/components/teaser,/apps/aemsite/components/title]"
+                    layoutDisabled="false"/>
+                <policy_1215390798136500
+                    jcr:lastModified="{Date}2021-11-30T09:48:21.411+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="News"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/aemsite/components/button,/apps/aemsite/components/teaser,/apps/aemsite/components/title]"
+                    layoutDisabled="false"/>
+                <policy_1215449717833900
+                    jcr:lastModified="{Date}2021-11-30T09:50:06.567+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="stories"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/aemsite/components/button,/apps/aemsite/components/teaser,/apps/aemsite/components/title]"
+                    layoutDisabled="false"/>
+                <policy_1215583002704400
+                    jcr:lastModified="{Date}2021-11-30T09:51:24.659+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Research"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/aemsite/components/carousel,/apps/aemsite/components/teaser,/apps/aemsite/components/title]"
+                    layoutDisabled="false"/>
+                <policy_64753043371800
+                    jcr:lastModified="{Date}2021-12-02T09:30:39.773+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Featured"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/aemsite/components/button,/apps/aemsite/components/teaser,/apps/aemsite/components/title]"
+                    layoutDisabled="false"/>
+                <policy_64809108149900
+                    jcr:lastModified="{Date}2021-12-02T09:31:33.702+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Container"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/aemsite/components/button,/apps/aemsite/components/teaser,/apps/aemsite/components/title]"
+                    layoutDisabled="false"/>
+                <policy_168291373319100
+                    jcr:lastModified="{Date}2021-12-03T14:16:19.108+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Section1"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/aemsite/components/button,/apps/aemsite/components/teaser,/apps/aemsite/components/title]"
+                    layoutDisabled="false"/>
+                <policy_168363674832900
+                    cq:styleDefaultElement="div"
+                    jcr:lastModified="{Date}2021-12-03T14:17:23.031+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Section1"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/aemsite/components/button,/apps/aemsite/components/teaser,/apps/aemsite/components/title]"
+                    layoutDisabled="false"/>
+                <policy_409271886108700
+                    jcr:lastModified="{Date}2021-12-06T09:13:24.490+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="responsive container"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    layout="responsiveGrid"
+                    layoutDisabled="false"/>
+                <policy_428147540303100
+                    jcr:lastModified="{Date}2021-12-06T14:26:28.239+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="TestTemplet"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="group:AEM Site - Content"
+                    layoutDisabled="false"/>
+                <policy_428158718968300
+                    jcr:lastModified="{Date}2021-12-06T14:26:48.514+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="TestTemplet"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    layout="responsiveGrid"
+                    layoutDisabled="false"/>
+                <policy_430169027379200
+                    jcr:lastModified="{Date}2021-12-06T15:00:10.342+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="TestTemplet"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="group:AEM Site - Content"
+                    layoutDisabled="false"/>
+                <policy_430209108388600
+                    jcr:lastModified="{Date}2021-12-06T15:11:15.880+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="TestTemplet"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="group:AEM Site - Content"
+                    layoutDisabled="false"/>
+                <policy_1012690977392000
+                    jcr:lastModified="{Date}2021-12-13T08:49:50.041+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="container"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/aemsite/components/button,/apps/aemsite/components/container,/apps/aemsite/components/teaser,/apps/aemsite/components/title]"
+                    layoutDisabled="false"/>
+                <policy_1012832983419700
+                    jcr:lastModified="{Date}2021-12-13T08:50:54.431+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="TestTemplet"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="group:AEM Site - Content"
+                    layoutDisabled="false"/>
+                <policy_1014462019767800
+                    jcr:lastModified="{Date}2021-12-13T09:18:11.581+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="News"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    backgroundColorEnabled="true"
+                    components="[/apps/aemsite/components/button,/apps/aemsite/components/teaser,/apps/aemsite/components/title]"
+                    layout="responsiveGrid"
+                    layoutDisabled="false"/>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -313,6 +498,63 @@
                     titleType="h3">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1575031387650>
+                <policy_1014571434720000
+                    cq:styleDefaultClasses="cmp-teaser--hero"
+                    jcr:lastModified="{Date}2021-12-13T09:20:59.205+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Teaser-hero"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    showTitleType="false">
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Style"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-teaser--hero"
+                                    cq:styleLabel="Hero"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_1014571434720000>
+                <policy_1014720368723400
+                    jcr:lastModified="{Date}2021-12-13T09:23:49.751+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Tease-Styles"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    showTitleType="false">
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Style"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-teaser--left"
+                                    cq:styleLabel="Image Left"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-teaser--right"
+                                    cq:styleLabel="Image Right"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="cmp-teaser--bottom"
+                                    cq:styleLabel="Image Bottom"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="cmp-teaser--top"
+                                    cq:styleLabel="Image Top"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item4
+                                    cq:styleClasses="cmp-teaser--noimage"
+                                    cq:styleLabel="No Image"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_1014720368723400>
             </teaser>
             <download jcr:primaryType="nt:unstructured">
                 <policy_1575032193319
