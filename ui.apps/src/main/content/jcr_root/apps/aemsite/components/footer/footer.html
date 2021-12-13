@@ -1,30 +1,22 @@
-<style>
-    .cmp-footer__content__items {
-        display: inline-block;
-        color: brown;
-    }
 
-    .cmp-footer__text {
-        color: brown;
-    }
-</style>
-
-<div class="cmp-footer" data-sly-use.model="com.aemsite.core.models.Footer">
-    <!-- <div class="cmp-footer__initialcontent" data-sly-test="${properties.links}"></div> -->
-    <div class="cmp-footer__content" data-sly-list.outerGroup="${model.outerGroup}">
-        <div class="cmp-footer__content__items" data-sly-list.innerGroup="${outerGroup.innerGroup}">
-            <ul>
-                <li>
-                    <a class="cmp-footer__text" href="">${innerGroup.links}</a><br>
+<div class="cmp-customfooter" data-sly-use.model="com.aemsite.core.models.Footer"
+    data-sly-use.template="core/wcm/components/commons/v1/templates.html">
+    <div class="cmp-customfooter__content" data-sly-list.outerGroup="${model.outerGroup}">
+        <div class="cmp-customfooter__content__items" data-sly-list.innerGroup="${outerGroup.innerGroup}">
+            <ul class="cmp-customfooter__ul">
+                <li class="cmp-customfooter__li">
+                    <a class="cmp-customfooter__text" href="">${innerGroup.links}</a>
                 </li>
             </ul>
 
         </div>
     </div>
 </div>
+
+<sly data-sly-call="${template.placeholder @ isEmpty=!hasContent, classAppend='cmp-navigation'}"></sly>
 <div>
     <ul>
-        <li>
+        <li class="cmp-customfooter__li">
             <h1>
                 ${properties.title}
             </h1>
@@ -32,13 +24,13 @@
     </ul>
 
 </div>
-<ul data-sly-list.images="${properties.innerGroup}">
+<!--<ul data-sly-list.items="${properties.imageGroup}">
     <li>
         <div>
-            <img src="${images.file}">
-            <a class="cmp-image--link" href="${images.linkURL}">
+            <a class="cmp-image--link" href="${items.linkURL}">
+                <img src="${items.imagePath}">
             </a>
 
         </div>
     </li>
-</ul>
+</ul> -->
