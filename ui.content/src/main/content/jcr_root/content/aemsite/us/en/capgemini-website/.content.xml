@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-12-13T10:51:30.620+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/aemsite/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Capgemini website"
+        sling:resourceType="aemsite/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aemsite/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemsite/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemsite/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemsite/components/container"
+                    layout="responsiveGrid">
+                    <languagenavigation
+                        jcr:created="{Date}2021-12-10T10:49:08.482+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-12-10T11:59:27.019+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemsite/components/languagenavigation"
+                        navigationRoot="/content/aemsite/us/language-master"
+                        structureDepth="2"
+                        text="Select which Site you would like to reach:"/>
+                    <search
+                        jcr:created="{Date}2021-12-13T10:14:36.166+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-12-13T10:14:36.166+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemsite/components/search"/>
+                    <teaser_478856286
+                        cq:styleIds="[1639111692051]"
+                        jcr:created="{Date}2021-12-13T08:38:13.712+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>On UN's international Human Rights Day&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2021-12-13T08:40:38.187+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Honoring human rights"
+                        sling:resourceType="aemsite/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/aemsite/web-banner-1200-x-350-RR.png"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/aemsite/us/en/capgemini-website"
+                                text=">"/>
+                        </actions>
+                    </teaser_478856286>
+                    <teaser_158070956
+                        cq:styleIds="[1639111692051]"
+                        jcr:created="{Date}2021-12-13T08:22:26.030+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>How organizations can empower consumers and transition to a circular economy&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2021-12-13T08:25:06.154+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Circular economy for a sustainable future"
+                        sling:resourceType="aemsite/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/aemsite/DotCom_Banner_1200x350-1 (1).jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/aemsite/us/en/capgemini-website"
+                                text=">"/>
+                        </actions>
+                    </teaser_158070956>
+                    <teaser_1323359875
+                        cq:styleIds="[1639111692051]"
+                        jcr:created="{Date}2021-12-13T08:25:41.714+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>Capgemini Research Institute's new report positions sustainability as a cornerstone of...&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2021-12-13T08:27:40.175+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Sustainable IT"
+                        sling:resourceType="aemsite/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/aemsite/03_Dotcom-banner-_1200px-X-350px.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/aemsite/us/en/capgemini-website"
+                                text=">"/>
+                        </actions>
+                    </teaser_1323359875>
+                    <teaser
+                        cq:styleIds="[1639111692051]"
+                        jcr:created="{Date}2021-12-10T10:54:09.565+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>Capgemini Research Institute's new report positions sustainability as a cornerstone of...&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2021-12-10T11:15:34.402+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Sustainable Operations"
+                        sling:resourceType="aemsite/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/aemsite/DotCom_Banner_1200x350-1.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/aemsite/us/en"
+                                text=">"/>
+                        </actions>
+                    </teaser>
+                    <teaser_890353230
+                        cq:styleIds="[1639111692051]"
+                        jcr:created="{Date}2021-12-13T08:28:22.526+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>How automotive OEMs can harness the potential of software-driven transformation&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2021-12-13T08:29:57.419+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Next Destination: Software"
+                        sling:resourceType="aemsite/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/aemsite/DotCom_Banner_1200x350_option.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/aemsite/us/en/capgemini-website"
+                                text=">"/>
+                        </actions>
+                    </teaser_890353230>
+                    <teaser_1011118881
+                        cq:styleIds="[1639111692051]"
+                        jcr:created="{Date}2021-12-13T08:30:22.661+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>The Future Of Work Starts Now&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2021-12-13T08:52:04.685+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Conversations for Tomorrow #2"
+                        sling:resourceType="aemsite/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/aemsite/DotCom_Banner_1200x350.jpg.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/aemsite/us/en/capgemini-website"
+                                text=">"/>
+                        </actions>
+                    </teaser_1011118881>
+                    <teaser_1122060058
+                        cq:styleIds="[1639111692051]"
+                        jcr:created="{Date}2021-12-13T08:32:56.838+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>The future of industry is intelligent and sustainable. Incremental changes is no longer...&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2021-12-13T08:34:27.162+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="How intelligent industry can deliver both performance and sustainability"
+                        sling:resourceType="aemsite/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/aemsite/Intelligent-Industry_dotcombanner_20211122_V1-.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/aemsite/us/en/capgemini-website"
+                                text=">"/>
+                        </actions>
+                    </teaser_1122060058>
+                    <teaser_1106630915
+                        cq:styleIds="[1639111706799]"
+                        jcr:created="{Date}2021-12-13T08:35:06.135+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>Being the CEO of your own role is essential to drive the best business outcomes&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2021-12-13T08:37:02.898+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemsite/components/teaser"
+                        actionsEnabled="false"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/aemsite/Suze.jpg"
+                        imageCrop="55,21,499,317"
+                        linkURL="/content/aemsite/us/en/suze-russell"
+                        textIsRich="true"
+                        titleFromPage="true"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

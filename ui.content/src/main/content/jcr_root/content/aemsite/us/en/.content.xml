@@ -2,14 +2,15 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        pageTitle="AEM Site"
-        jcr:primaryType="cq:PageContent"
-        jcr:title="en"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2021-12-10T10:47:39.512+05:30"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/aemsite/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="en"
         sling:resourceType="aemsite/components/page"
-    >
+        pageTitle="AEM Site">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aemsite/components/container"
@@ -72,12 +73,27 @@
                                 width="4"/>
                         </cq:responsive>
                     </teaser_copy_1579324932>
-                    <helloworld
+                    <teaser_1005882019
+                        jcr:created="{Date}2021-12-10T10:13:40.244+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-12-10T10:13:40.244+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="aemsite/components/helloworld"
-                        text="lalala :)"/>
+                        sling:resourceType="aemsite/components/teaser"/>
+                    <languagenavigation
+                        jcr:created="{Date}2021-12-10T10:38:40.588+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-12-10T10:47:39.508+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemsite/components/languagenavigation"
+                        navigationRoot="/content/aemsite/us/language-master"
+                        structureDepth="2"
+                        text="Select which Site you would like to reach:"/>
                 </container>
             </container>
         </root>
     </jcr:content>
+    <capgemini-website/>
+    <suze-russell/>
 </jcr:root>
