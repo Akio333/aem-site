@@ -3,34 +3,46 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:lastModified="{Date}2021-12-06T14:58:51.030+05:30"
+        cq:lastModified="{Date}2021-12-16T16:13:24.503+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aemsite/settings/wcm/templates/homepage-templet"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="aemsite/components/page">
         <root
-            jcr:lastModified="{Date}2021-11-30T09:26:09.279+05:30"
+            jcr:lastModified="{Date}2021-12-16T16:13:24.493+05:30"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aemsite/components/container"
+            backgroundColor="rgb(255,255,255)"
             layout="responsiveGrid">
-            <experiencefragment-header
-                jcr:lastModified="{Date}2021-12-06T14:58:51.023+05:30"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="aemsite/components/experiencefragment"
-                fragmentVariationPath="/content/experience-fragments/aemsite/us/en/site/header/master"/>
-            <container
-                jcr:created="{Date}2021-12-02T09:28:23.513+05:30"
+            <container_1338787288
+                jcr:created="{Date}2021-12-16T14:26:10.642+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2021-12-13T09:18:54.605+05:30"
+                jcr:lastModified="{Date}2021-12-16T14:26:10.642+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemsite/components/container">
+                <experiencefragment
+                    jcr:created="{Date}2021-12-16T10:14:43.456+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-16T10:15:21.426+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemsite/components/experiencefragment"
+                    fragmentVariationPath="/content/experience-fragments/aemsite/us/en/site/header/master"/>
+            </container_1338787288>
+            <container
+                jcr:created="{Date}2021-12-02T09:28:23.513+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-16T16:10:43.205+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemsite/components/container"
+                layout="responsiveGrid">
                 <teaser
                     jcr:created="{Date}2021-12-02T09:29:40.212+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2021-12-02T09:29:40.212+05:30"
+                    jcr:lastModified="{Date}2021-12-16T15:03:35.107+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemsite/components/teaser"
@@ -39,7 +51,7 @@
             <responsivegrid
                 jcr:created="{Date}2021-12-06T09:14:35.247+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2021-12-13T09:19:15.043+05:30"
+                jcr:lastModified="{Date}2021-12-16T15:58:51.331+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
@@ -50,7 +62,14 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemsite/components/title"
-                    editable="{Boolean}true"/>
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="1"
+                            width="8"/>
+                    </cq:responsive>
+                </title>
                 <teaser
                     jcr:created="{Date}2021-12-06T09:15:26.044+05:30"
                     jcr:createdBy="admin"
@@ -63,7 +82,7 @@
                         <default
                             jcr:primaryType="nt:unstructured"
                             offset="1"
-                            width="10"/>
+                            width="8"/>
                     </cq:responsive>
                 </teaser>
                 <teaser_982783061
@@ -78,7 +97,7 @@
                         <default
                             jcr:primaryType="nt:unstructured"
                             offset="1"
-                            width="5"/>
+                            width="4"/>
                     </cq:responsive>
                 </teaser_982783061>
                 <teaser_965128393
@@ -93,24 +112,29 @@
                         <default
                             jcr:primaryType="nt:unstructured"
                             offset="0"
-                            width="5"/>
+                            width="4"/>
                     </cq:responsive>
                 </teaser_965128393>
                 <button
-                    jcr:created="{Date}2021-12-06T09:18:50.430+05:30"
+                    jcr:created="{Date}2021-12-16T10:30:10.888+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2021-12-06T09:18:50.430+05:30"
+                    jcr:lastModified="{Date}2021-12-16T10:30:10.888+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aemsite/components/button"
-                    editable="{Boolean}true">
+                    sling:resourceType="aemsite/components/button">
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
                             jcr:primaryType="nt:unstructured"
-                            offset="5"
+                            offset="4"
                             width="2"/>
                     </cq:responsive>
                 </button>
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
             </responsivegrid>
             <responsivegrid_1266623670
                 jcr:created="{Date}2021-12-06T09:17:53.396+05:30"
@@ -119,7 +143,12 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
-                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
                 <title
                     jcr:created="{Date}2021-12-06T09:18:18.816+05:30"
                     jcr:createdBy="admin"
@@ -127,7 +156,14 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemsite/components/title"
-                    editable="{Boolean}true"/>
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="7"/>
+                    </cq:responsive>
+                </title>
                 <teaser
                     jcr:created="{Date}2021-12-06T09:18:23.975+05:30"
                     jcr:createdBy="admin"
@@ -139,8 +175,8 @@
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
                             jcr:primaryType="nt:unstructured"
-                            offset="1"
-                            width="3"/>
+                            offset="2"
+                            width="2"/>
                     </cq:responsive>
                 </teaser>
                 <teaser_1871851762
@@ -155,7 +191,7 @@
                         <default
                             jcr:primaryType="nt:unstructured"
                             offset="0"
-                            width="3"/>
+                            width="2"/>
                     </cq:responsive>
                 </teaser_1871851762>
                 <teaser_1548638840
@@ -170,7 +206,7 @@
                         <default
                             jcr:primaryType="nt:unstructured"
                             offset="0"
-                            width="3"/>
+                            width="2"/>
                     </cq:responsive>
                 </teaser_1548638840>
             </responsivegrid_1266623670>
@@ -181,7 +217,12 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
-                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
                 <title
                     jcr:created="{Date}2021-12-06T09:18:18.816+05:30"
                     jcr:createdBy="admin"
@@ -189,7 +230,14 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemsite/components/title"
-                    editable="{Boolean}true"/>
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="7"/>
+                    </cq:responsive>
+                </title>
                 <teaser
                     jcr:created="{Date}2021-12-06T09:18:23.975+05:30"
                     jcr:createdBy="admin"
@@ -201,8 +249,8 @@
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
                             jcr:primaryType="nt:unstructured"
-                            offset="1"
-                            width="3"/>
+                            offset="2"
+                            width="2"/>
                     </cq:responsive>
                 </teaser>
                 <teaser_1871851762
@@ -217,7 +265,7 @@
                         <default
                             jcr:primaryType="nt:unstructured"
                             offset="0"
-                            width="3"/>
+                            width="2"/>
                     </cq:responsive>
                 </teaser_1871851762>
                 <teaser_1548638840
@@ -232,13 +280,13 @@
                         <default
                             jcr:primaryType="nt:unstructured"
                             offset="0"
-                            width="3"/>
+                            width="2"/>
                     </cq:responsive>
                 </teaser_1548638840>
-                <button_copy
-                    jcr:created="{Date}2021-12-06T09:18:50.430+05:30"
+                <button
+                    jcr:created="{Date}2021-12-16T10:30:55.066+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2021-12-06T09:18:50.430+05:30"
+                    jcr:lastModified="{Date}2021-12-16T12:38:01.673+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemsite/components/button"
@@ -246,10 +294,10 @@
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
                             jcr:primaryType="nt:unstructured"
-                            offset="5"
-                            width="2"/>
+                            offset="1"
+                            width="8"/>
                     </cq:responsive>
-                </button_copy>
+                </button>
             </responsivegrid_12666>
             <responsivegrid_936207796
                 jcr:created="{Date}2021-12-06T09:18:00.702+05:30"
@@ -258,7 +306,12 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
-                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
                 <title
                     jcr:created="{Date}2021-12-06T09:23:33.317+05:30"
                     jcr:createdBy="admin"
@@ -266,7 +319,14 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemsite/components/title"
-                    editable="{Boolean}true"/>
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="7"/>
+                    </cq:responsive>
+                </title>
                 <carousel
                     jcr:created="{Date}2021-12-06T09:23:41.138+05:30"
                     jcr:createdBy="admin"
@@ -274,7 +334,14 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemsite/components/carousel"
-                    editable="{Boolean}true"/>
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="6"/>
+                    </cq:responsive>
+                </carousel>
             </responsivegrid_936207796>
             <responsivegrid_12666_740830240
                 jcr:created="{Date}2021-12-06T09:17:53.396+05:30"
@@ -283,7 +350,12 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
-                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
                 <title
                     jcr:created="{Date}2021-12-06T09:18:18.816+05:30"
                     jcr:createdBy="admin"
@@ -291,7 +363,14 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemsite/components/title"
-                    editable="{Boolean}true"/>
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="7"/>
+                    </cq:responsive>
+                </title>
                 <teaser
                     jcr:created="{Date}2021-12-06T09:18:23.975+05:30"
                     jcr:createdBy="admin"
@@ -303,8 +382,8 @@
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
                             jcr:primaryType="nt:unstructured"
-                            offset="1"
-                            width="3"/>
+                            offset="2"
+                            width="2"/>
                     </cq:responsive>
                 </teaser>
                 <teaser_1871851762
@@ -319,7 +398,7 @@
                         <default
                             jcr:primaryType="nt:unstructured"
                             offset="0"
-                            width="3"/>
+                            width="2"/>
                     </cq:responsive>
                 </teaser_1871851762>
                 <teaser_1548638840
@@ -334,7 +413,7 @@
                         <default
                             jcr:primaryType="nt:unstructured"
                             offset="0"
-                            width="3"/>
+                            width="2"/>
                     </cq:responsive>
                 </teaser_1548638840>
             </responsivegrid_12666_740830240>
@@ -345,7 +424,12 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
-                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
                 <title
                     jcr:created="{Date}2021-12-06T14:16:38.317+05:30"
                     jcr:createdBy="admin"
@@ -353,7 +437,14 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemsite/components/title"
-                    editable="{Boolean}true"/>
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="7"/>
+                    </cq:responsive>
+                </title>
                 <teaser_241396155
                     jcr:created="{Date}2021-12-06T14:17:39.544+05:30"
                     jcr:createdBy="admin"
@@ -361,7 +452,14 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemsite/components/teaser"
-                    editable="{Boolean}true"/>
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="6"/>
+                    </cq:responsive>
+                </teaser_241396155>
             </responsivegrid_106638067>
             <responsivegrid_1838070355
                 jcr:created="{Date}2021-12-06T14:16:56.536+05:30"
@@ -370,7 +468,12 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
-                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
                 <title
                     jcr:created="{Date}2021-12-06T14:17:15.384+05:30"
                     jcr:createdBy="admin"
@@ -378,7 +481,14 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemsite/components/title"
-                    editable="{Boolean}true"/>
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="7"/>
+                    </cq:responsive>
+                </title>
                 <teaser
                     jcr:created="{Date}2021-12-06T14:16:44.984+05:30"
                     jcr:createdBy="admin"
@@ -386,7 +496,14 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemsite/components/teaser"
-                    editable="{Boolean}true"/>
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="6"/>
+                    </cq:responsive>
+                </teaser>
             </responsivegrid_1838070355>
             <responsivegrid_2080405430
                 jcr:created="{Date}2021-12-06T14:17:06.977+05:30"
@@ -395,7 +512,12 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
-                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
                 <title
                     jcr:created="{Date}2021-12-06T14:17:54.206+05:30"
                     jcr:createdBy="admin"
@@ -403,24 +525,137 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemsite/components/title"
-                    editable="{Boolean}true"/>
-                <container
-                    jcr:created="{Date}2021-12-06T14:18:00.039+05:30"
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="7"/>
+                    </cq:responsive>
+                </title>
+                <teaser
+                    jcr:created="{Date}2021-12-16T09:52:13.452+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2021-12-06T14:18:00.039+05:30"
+                    jcr:lastModified="{Date}2021-12-16T09:52:13.452+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aemsite/components/container"
+                    sling:resourceType="aemsite/components/teaser"
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="2"/>
+                    </cq:responsive>
+                </teaser>
+                <teaser_230267876
+                    jcr:created="{Date}2021-12-16T09:52:32.224+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-16T09:52:32.224+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemsite/components/teaser"
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="2"/>
+                    </cq:responsive>
+                </teaser_230267876>
+                <teaser_1489422417
+                    jcr:created="{Date}2021-12-16T09:52:50.351+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-16T09:52:50.351+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemsite/components/teaser"
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="2"/>
+                    </cq:responsive>
+                </teaser_1489422417>
+                <teaser_1723340997
+                    jcr:created="{Date}2021-12-16T09:53:03.970+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-16T09:53:03.970+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemsite/components/teaser"
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="2"/>
+                    </cq:responsive>
+                </teaser_1723340997>
+                <teaser_1386550611
+                    jcr:created="{Date}2021-12-16T09:53:51.712+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-16T09:53:51.712+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemsite/components/teaser"
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="2"/>
+                    </cq:responsive>
+                </teaser_1386550611>
+                <teaser_1040503047
+                    jcr:created="{Date}2021-12-16T09:54:20.637+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-16T09:54:20.637+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemsite/components/teaser"
+                    editable="{Boolean}true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="2"/>
+                    </cq:responsive>
+                </teaser_1040503047>
+                <button
+                    jcr:created="{Date}2021-12-16T10:31:06.369+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-16T10:31:06.369+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemsite/components/button"
                     editable="{Boolean}true"/>
             </responsivegrid_2080405430>
-            <experiencefragment
-                jcr:created="{Date}2021-12-06T14:18:14.411+05:30"
+            <container_914679572
+                jcr:created="{Date}2021-12-16T10:16:15.355+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2021-12-06T14:22:29.140+05:30"
+                jcr:lastModified="{Date}2021-12-16T10:16:31.018+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="aemsite/components/experiencefragment"
-                fragmentVariationPath="/content/experience-fragments/aemsite/us/en/site/footer/master"/>
+                sling:resourceType="aemsite/components/container"
+                layout="responsiveGrid">
+                <experiencefragment
+                    jcr:created="{Date}2021-12-16T10:16:40.199+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-16T10:22:15.650+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemsite/components/experiencefragment"
+                    fragmentVariationPath="/content/experience-fragments/aemsite/us/en/site/footer/master">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="1"
+                            width="10"/>
+                    </cq:responsive>
+                </experiencefragment>
+            </container_914679572>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">

@@ -1,0 +1,28 @@
+.cmp-title {
+  padding-bottom: 2.5rem;
+  &__text {
+    font: 2.1rem/1.33 "Ubuntu", "Sans Serif";
+    font-weight: 500;
+  }
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 8px;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2b0a3d;
+  }
+  &--white & {
+    color: white;
+    &::after {
+      background-color: white;
+    }
+  }
+  &--black & {
+    color: black;
+    &::after {
+      background-color: black;
+    }
+  }
+}

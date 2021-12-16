@@ -70,10 +70,10 @@
     }
 
 
-    .button {
+    .lang_dd {
         position: absolute;
-        top: 0.625rem;
-        left: 54.375rem;
+        top: 1rem;
+        left: 70rem;
         display: flex;
         flex-direction: row;
         cursor: pointer;
@@ -83,7 +83,7 @@
     }
 
 
-    .button p {
+    .lang_dd p {
         position: relative;
         left: 0.625rem;
         font: 1rem/1.56 ubuntu, Verdana, Arial, sans-serif;
@@ -97,7 +97,7 @@
         border-right: 0.063rem solid black;
         transform: rotate(45deg);
         position: relative;
-        top: 1.438rem;
+        top: 0.5rem;
         left: 1.688rem;
     }
 
@@ -106,7 +106,7 @@
     }
 </style>
 
-<div class="button" id="button">
+<div class="lang_dd" id="lang_dd">
     <img src="https://www.capgemini.com/wp-content/themes/capgemini-komposite/assets/images/fl/globe.svg"
         alt="noimage" />
     <p>Global | EN</p>
@@ -133,7 +133,7 @@
 
 
 <script>
-    var button = document.getElementById("button");
+    var button = document.getElementById("lang_dd");
     var display = 1;
     console.log("Helloworld")
     button.addEventListener("click", function () {

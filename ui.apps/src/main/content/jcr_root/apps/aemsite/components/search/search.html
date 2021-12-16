@@ -19,59 +19,27 @@
     display: none;
   }
 
-  .cmp-search__form {}
-
-  .cmp-search__field {}
-
-  .cmp-search__icon {}
-
-  .cmp-search__input {}
-
-  .cmp-search__loading-indicator {}
-
-  .cmp-search__clear {}
-
-  .cmp-search__clear-icon {}
-
-  .cmp-search__results {}
-
-  .cmp-search__item {}
-
-  .cmp-search__item--is-focused {}
-
-  .cmp-search__item-mark {}
-
-  .cmp-search__item-title {}
-
   .icon {
     position: absolute;
-    top: 4px;
-    left: 1100px;
+    top: 1rem;
+    left: 85rem;
     display: flex;
     flex-direction: row;
     cursor: pointer;
     font: 1.2rem/1.56 ubuntu, Verdana, Arial, sans-serif;
 
   }
-
-  .icon img {
-    position: relative;
-    top: 23px;
-    right: 5px;
-    width: 20px;
-    height: 20px;
-
-  }
 </style>
 
-
-
-
-
 <div class="icon" id="icon">
-
-  <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png" />
-  <p>Search</p>
+  <p>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+      viewBox="0 0 16 16">
+      <path
+        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+    </svg>
+    Search
+  </p>
 </div>
 <section data-sly-use.search="com.adobe.cq.wcm.core.components.models.Search" id="${search.id}" class="cmp-search"
   role="search" data-cmp-is="search" data-cmp-min-length="${search.searchTermMinimumLength}"
