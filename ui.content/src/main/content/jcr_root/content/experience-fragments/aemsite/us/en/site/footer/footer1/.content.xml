@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-12-17T17:23:48.769+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/aemsite/settings/wcm/templates/xf-web-variation"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer1"
+        sling:resourceType="aemsite/components/xfpage">
+        <root
+            jcr:lastModified="{Date}2021-12-17T09:34:13.512+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aemsite/components/container"
+            layout="responsiveGrid">
+            <image
+                cq:styleIds="[1639741866835]"
+                jcr:created="{Date}2021-12-17T09:35:41.234+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-17T09:38:09.987+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemsite/components/image"
+                fileReference="/content/dam/aemsite/logos/cg_logo.svg">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="2"/>
+                </cq:responsive>
+            </image>
+            <footer
+                jcr:created="{Date}2021-12-17T09:36:27.278+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-17T09:44:14.698+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemsite/components/footer">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="7"/>
+                </cq:responsive>
+                <outerGroup jcr:primaryType="nt:unstructured">
+                    <item0 jcr:primaryType="nt:unstructured">
+                        <innerGroup jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                links="Services"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                links="Industries"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                links="Partners"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                links="Our Experts"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                links="Insights and news"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                links="Careers and company"/>
+                        </innerGroup>
+                    </item0>
+                    <item1 jcr:primaryType="nt:unstructured">
+                        <innerGroup jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                links="Investment relation"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                links="News room"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                links="Our offices"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                links="Contact us"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                links="Sitemap"/>
+                        </innerGroup>
+                    </item1>
+                    <item2 jcr:primaryType="nt:unstructured">
+                        <innerGroup jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                links="Terms of use"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                links="privacy policy"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                links="accesibility"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                links="our social media"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                links="social conduct"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                links="social media house"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                links="rules"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                links="legal info"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                links="security vulnerability"/>
+                            <item9
+                                jcr:primaryType="nt:unstructured"
+                                links="cookie poilcy"/>
+                            <item10
+                                jcr:primaryType="nt:unstructured"
+                                links="cookie setting"/>
+                        </innerGroup>
+                    </item2>
+                </outerGroup>
+            </footer>
+            <title
+                jcr:created="{Date}2021-12-17T09:36:51.766+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-17T09:38:32.530+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Our Brands:"
+                sling:resourceType="aemsite/components/title">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="3"/>
+                </cq:responsive>
+            </title>
+            <image_978379031
+                jcr:created="{Date}2021-12-17T09:37:15.382+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-17T09:39:03.278+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemsite/components/image"
+                fileReference="/content/dam/aemsite/logos/capgemini_engineering.svg">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="2"/>
+                </cq:responsive>
+            </image_978379031>
+            <image_42282073
+                cq:styleIds="[1639741866835]"
+                jcr:created="{Date}2021-12-17T09:37:35.017+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-17T09:39:11.248+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemsite/components/image"
+                fileReference="/content/dam/aemsite/logos/capgemini-invent.svg">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="2"/>
+                </cq:responsive>
+            </image_42282073>
+            <image_1058833197
+                cq:styleIds="[1639741866835]"
+                jcr:created="{Date}2021-12-17T09:37:44.174+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-17T09:39:16.038+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemsite/components/image"
+                fileReference="/content/dam/aemsite/logos/sogeti-by-capgemini.svg">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="2"/>
+                </cq:responsive>
+            </image_1058833197>
+        </root>
+    </jcr:content>
+</jcr:root>

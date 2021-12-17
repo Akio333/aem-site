@@ -2,13 +2,14 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
     jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
-    <homepage-templet/>
-    <testtemplet/>
     <spa-next-remote-page/>
     <spa-remote-page/>
     <page-content/>
     <xf-web-variation/>
     <rep:policy/>
-    <testpagetemplet/>
+    <homepage-templet/>
     <newhometemplet/>
+    <testpagetemplet/>
+    <testtemplet/>
+    <homepagetemplate/>
 </jcr:root>

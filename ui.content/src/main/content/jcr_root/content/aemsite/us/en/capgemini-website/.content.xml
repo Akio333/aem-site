@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-12-16T15:07:56.905+05:30"
+        cq:lastModified="{Date}2021-12-17T14:48:01.052+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aemsite/settings/wcm/templates/homepage-templet"
         jcr:primaryType="cq:PageContent"
@@ -22,6 +22,7 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
                 <title
+                    cq:styleIds="[1639653626120]"
                     jcr:created="{Date}2021-12-06T09:18:18.816+05:30"
                     jcr:createdBy="admin"
                     jcr:lastModified="{Date}2021-12-15T09:45:15.291+05:30"
@@ -30,6 +31,7 @@
                     jcr:title="In The News"
                     sling:resourceType="aemsite/components/title"/>
                 <teaser
+                    cq:styleIds="[1639653745543]"
                     jcr:created="{Date}2021-12-06T09:18:23.975+05:30"
                     jcr:createdBy="admin"
                     jcr:description="&lt;p>In accordance with commitments made earlier&amp;nbsp;this year,&amp;nbsp;Capgemini&amp;nbsp;unveiled&amp;nbsp;today a framework...&lt;/p>&#xd;&#xa;"
@@ -51,6 +53,7 @@
                     </actions>
                 </teaser>
                 <teaser_1871851762
+                    cq:styleIds="[1639653745543]"
                     jcr:created="{Date}2021-12-06T09:18:30.607+05:30"
                     jcr:createdBy="admin"
                     jcr:description="&lt;p> Capgemini today announced a new five-year contract with Heathrow to provide end user services ...&lt;/p>&#xd;&#xa;"
@@ -72,6 +75,7 @@
                     </actions>
                 </teaser_1871851762>
                 <teaser_1548638840
+                    cq:styleIds="[1639653745543]"
                     jcr:created="{Date}2021-12-06T09:18:36.646+05:30"
                     jcr:createdBy="admin"
                     jcr:description="&lt;p>Capgemini is first amongst consultancy and technology firms to be recognized six times...&lt;/p>&#xd;&#xa;"
@@ -109,6 +113,7 @@
                     jcr:title="Client Stories"
                     sling:resourceType="aemsite/components/title"/>
                 <teaser
+                    cq:styleIds="[1639653745543]"
                     jcr:created="{Date}2021-12-06T09:18:23.975+05:30"
                     jcr:createdBy="admin"
                     jcr:description="&lt;p>Cloud migration to Microsoft Azure offers Action optimal possibilities for growth and ...&lt;/p>&#xd;&#xa;"
@@ -130,6 +135,7 @@
                     </actions>
                 </teaser>
                 <teaser_1871851762
+                    cq:styleIds="[1639653745543]"
                     jcr:created="{Date}2021-12-06T09:18:30.607+05:30"
                     jcr:createdBy="admin"
                     jcr:description="&lt;p>The LoVe Ocean Observatory partners with Capgemini to launch the 4th Global Data Science...&lt;/p>&#xd;&#xa;"
@@ -151,6 +157,7 @@
                     </actions>
                 </teaser_1871851762>
                 <teaser_1548638840
+                    cq:styleIds="[1639653745543]"
                     jcr:created="{Date}2021-12-06T09:18:36.646+05:30"
                     jcr:createdBy="admin"
                     jcr:description="&lt;p>In partnership with Capgemini, a leading television and telecom service provider sets up the...&lt;/p>&#xd;&#xa;"
@@ -179,6 +186,7 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemsite/components/button"/>
                 <button
+                    cq:styleIds="[1639653873987]"
                     jcr:lastModified="{Date}2021-12-16T11:06:04.708+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
@@ -202,6 +210,7 @@
                     jcr:title="Research"
                     sling:resourceType="aemsite/components/title"/>
                 <carousel
+                    cq:styleIds="[1639664569681]"
                     jcr:created="{Date}2021-12-06T09:23:41.138+05:30"
                     jcr:createdBy="admin"
                     jcr:lastModified="{Date}2021-12-06T14:20:19.703+05:30"
@@ -244,6 +253,7 @@
                     sling:resourceType="aemsite/components/title"
                     type="h1"/>
                 <teaser
+                    cq:styleIds="[1639653745543]"
                     jcr:created="{Date}2021-12-06T09:18:23.975+05:30"
                     jcr:createdBy="admin"
                     jcr:description="&lt;p>The ‘Next Economy’ is going to reflect triple bottom line principles, accounting for&lt;/p>&#xd;&#xa;"
@@ -265,6 +275,7 @@
                     </actions>
                 </teaser>
                 <teaser_1871851762
+                    cq:styleIds="[1639653745543]"
                     jcr:created="{Date}2021-12-06T09:18:30.607+05:30"
                     jcr:createdBy="admin"
                     jcr:description="&lt;p>As this emerging technology reshapes the world, it must represent a range of perspectives and...&lt;/p>&#xd;&#xa;"
@@ -286,6 +297,7 @@
                     </actions>
                 </teaser_1871851762>
                 <teaser_1548638840
+                    cq:styleIds="[1639653745543]"
                     jcr:created="{Date}2021-12-06T09:18:36.646+05:30"
                     jcr:createdBy="admin"
                     jcr:description="&lt;p>December 3, the International Day of Persons with Disabilities, provided a good opportunity...&lt;/p>&#xd;&#xa;"
@@ -324,6 +336,7 @@
                     sling:resourceType="aemsite/components/title"
                     type="h1"/>
                 <teaser_241396155
+                    cq:styleIds="[1639653744915]"
                     jcr:created="{Date}2021-12-06T14:17:39.544+05:30"
                     jcr:createdBy="admin"
                     jcr:description="&lt;p>The future of industry is intelligent and sustainable. Incremental change is no longer...&lt;/p>&#xd;&#xa;"
@@ -361,6 +374,7 @@
                     jcr:title="Meet our People"
                     sling:resourceType="aemsite/components/title"/>
                 <teaser
+                    cq:styleIds="[1639653743091]"
                     jcr:created="{Date}2021-12-06T14:16:44.984+05:30"
                     jcr:createdBy="admin"
                     jcr:description="&lt;p>Being the CEO of your own role is essential to drive the best business outcomes&lt;/p>&#xd;&#xa;"
@@ -480,9 +494,10 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemsite/components/container">
                 <teaser
+                    cq:styleIds="[1639652663663]"
                     jcr:created="{Date}2021-12-02T09:29:40.212+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2021-12-14T12:42:31.509+05:30"
+                    jcr:lastModified="{Date}2021-12-16T16:46:53.728+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Mitigating the impact of climate change drives large-scale changes in energy and utilities sector"
@@ -508,6 +523,7 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
                 <title
+                    cq:styleIds="[1639653626120]"
                     jcr:created="{Date}2021-12-06T09:15:18.039+05:30"
                     jcr:createdBy="admin"
                     jcr:lastModified="{Date}2021-12-15T09:44:49.571+05:30"
@@ -517,18 +533,18 @@
                     sling:resourceType="aemsite/components/title"
                     type="h1"/>
                 <teaser
+                    cq:styleIds="[1639653744915]"
                     jcr:created="{Date}2021-12-06T09:15:26.044+05:30"
                     jcr:createdBy="admin"
                     jcr:description="&lt;p>Synthetic biology represents a trillion-dollar market that’s good for the planet and great...&lt;/p>&#xd;&#xa;"
-                    jcr:lastModified="{Date}2021-12-14T12:58:42.138+05:30"
+                    jcr:lastModified="{Date}2021-12-16T18:24:48.827+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Changing the world with synthetic biology"
+                    jcr:title="Honoring human right"
                     sling:resourceType="aemsite/components/teaser"
                     actionsEnabled="true"
                     descriptionFromPage="false"
-                    fileReference="/content/dam/aemsite/teasers/1.jpg"
-                    pretitle="FUTURE SIGHT PODCAST SERIES"
+                    fileReference="/content/dam/aemsite/teasers/MicrosoftTeams-image-2.jpg"
                     textIsRich="true"
                     titleFromPage="false">
                     <actions jcr:primaryType="nt:unstructured">
@@ -539,6 +555,7 @@
                     </actions>
                 </teaser>
                 <teaser_982783061
+                    cq:styleIds="[1639653743091]"
                     jcr:created="{Date}2021-12-06T09:15:35.533+05:30"
                     jcr:createdBy="admin"
                     jcr:description="&lt;p>Is hybrid working an unsustainable solution to a temporary problem or a flexible approach...&lt;/p>&#xd;&#xa;"
@@ -560,6 +577,7 @@
                     </actions>
                 </teaser_982783061>
                 <teaser_965128393
+                    cq:styleIds="[1639653743091]"
                     jcr:created="{Date}2021-12-06T09:15:41.642+05:30"
                     jcr:createdBy="admin"
                     jcr:description="&lt;p>Accelerate your digital transformation by moving to cloud, and add performance and agility to your businesses&lt;/p>&#xd;&#xa;"
@@ -581,6 +599,7 @@
                     </actions>
                 </teaser_965128393>
                 <button
+                    cq:styleIds="[1639653873987]"
                     jcr:created="{Date}2021-12-06T09:18:50.430+05:30"
                     jcr:createdBy="admin"
                     jcr:lastModified="{Date}2021-12-16T11:05:44.307+05:30"

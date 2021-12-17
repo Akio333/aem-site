@@ -9,3 +9,5 @@ heroimage.less
 footer.less
 customteaserv.less
 button.less
+background.less
+carousel.less

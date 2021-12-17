@@ -1,83 +1,524 @@
+// // .cmp-teaser--left {
+// //   .cmp-teaser {
+// //     background-color: transparent;
+// //     height: 20rem;
+// //     background-color: #f3f3f3;
+// //     &__image {
+// //       width: fit-content;
+// //       margin-right: 30rem;
+// //       padding-top: 20px;
+// //       padding-bottom: 50px;
+// //       padding-left: 20px;
+// //     }
+// //     &__content {
+// //       font: 1.25rem/1.5 "ubuntu", sans-serif;
+// //       margin-left: 31rem;
+// //       margin-top: -24rem;
+// //       padding-right: 0.625rem;
+// //       padding-top: 0.625rem;
+// //     }
+// //     &__title-link {
+// //       &:hover {
+// //         color: #2b0a3d;
+// //         text-decoration: underline;
+// //       }
+// //     }
+// //   }
+// // }
+// // .cmp-teaser--right {
+// //   .cmp-teaser {
+// //     background-color: transparent;
+// //     height: 20rem;
+// //     background-color: #f3f3f3;
+// //   }
+// //   .cmp-teaser__image {
+// //     margin-left: 43rem;
+// //     padding: 20px;
+// //     width: 30rem;
+// //   }
+// //   .cmp-teaser__content {
+// //     font: 1.25rem/1.5 "Ubuntu", Verdana, Arial, sans-serif;
+// //     padding-left: 2.625rem;
+// //     padding-top: 0.625rem;
+// //     margin-right: 35rem;
+// //     margin-top: -20rem;
+// //   }
+// // }
+
+// // .cmp-teaser {
+// //   &:hover {
+// //     box-shadow: 10px 10px #999;
+// //   }
+// // }
+// // .cmp-teaser__title {
+// //   color: #2b0a3d;
+// // }
+// // .cmp-teaser__title-link {
+// //   font: 1.5rem/1.5 "Ubuntu", Verdana, Arial, sans-serif;
+// //   color: #2b0a3d;
+// //   text-decoration: none;
+// //   font-weight: bold;
+// //   &:hover {
+// //     color: #0070ad;
+// //     text-decoration: underline;
+// //   }
+// // }
+// // .cmp-teaser__action-container {
+// //   margin-top: 9rem;
+// //   margin-top: 6rem;
+// //   margin-right: 2rem;
+// // }
+// // .cmp-teaser__action-link {
+// //   border-radius: 50%;
+// //   border: 2px solid #0070ad;
+// //   text-decoration: none;
+// //   padding: 0.25rem 0.625rem;
+// //   font-size: 1.25rem;
+// //   border-radius: 50;
+// //   &:hover {
+// //     background-color: #0070ad;
+// //     color: white;
+// //     text-decoration: none;
+// //   }
+// // }
+
+// .teaser(@disp, @direction, @color,@hover) {
+//   .cmp-teaser {
+//     background-color: white;
+//     // border:2px solid red;
+//     display: flex;
+//     flex-direction: @direction;
+//     padding: auto;
+//     box-shadow: none;
+//     transition: box-shadow 2s ease;
+//     &:hover {
+//       box-shadow: 10px 10px 0 0 rgba(43, 10, 61, 0.2);
+//       cursor: pointer;
+
+//     }
+//     &__image {
+//       flex-basis: 50%;
+//       border:2px solid black;
+//       img {
+//         display: block;
+//         width: 400px;
+//         height: 280px;
+//       }
+//     }
+//     &__title{flex-basis: 20%;}
+//     &__title-link {
+//       font-family: ubuntu;
+//       font-weight: 500;
+//       color: black;
+//       text-decoration: none;
+//       font-size: 1.8rem;
+//       &:hover {
+//         text-decoration: underline;
+//         color: @color;
+//       }
+//     }
+//     &__pretitle {
+//       border:2px solid red;
+//       display: @disp;
+//       font-family: ubuntu;
+//       font-size: 0.8rem;
+//       flex-basis:10%;
+//     }
+//     &__description {
+//         flex-basis:10%;
+//       font-family: ubuntu;
+//       font-size: 1rem;
+//     }
+//     &__content {
+//       border:2px solid red;
+//       width:500px;
+//       height:500px;
+//       flex-direction: column;
+//       flex-basis: 50%;
+//       padding: 25px;
+//     }
+//     &__action-container {
+//       margin-top: auto;
+//       display: @disp;
+//     }
+//     &__action-link {
+//       text-decoration: none;
+//       border: 2px solid #0070ad;
+//       padding: 6px 10px;
+//       border-radius: 50%;
+//       &:hover {
+//         background-color: #0070ad;
+//         color: white;
+//       }
+//     }
+//   }
+// }
+// .we-Teaser {
+//   padding: 5px;
+//   &--right {
+//     .teaser(block,row-reverse,#0070ad,underline);
+//   }
+//   &--left {
+//     .teaser(none,row,black,none);
+//   }
+//   &--bottom .cmp-teaser:hover {
+//   box-shadow: 10px 15px #999;
+//   .cmp-teaser__title-link {
+//     color: #0070ad;
+//     text-decoration: underline;
+//   }
+// }
+
+// &--bottom .cmp-teaser__title-link {
+//   text-decoration: none;
+//   color: #2b0a3d;
+// }
+// &--bottom .cmp-teaser__title-link1 {
+//   text-decoration: none;
+//   color: #2b0a3d;
+// }
+// &--bottom .cmp-teaser__content {
+//   padding-right: 24px;
+//   padding-left: 24px;
+//   display: block;
+//   grid-column: 1;
+//   grid-row: 1;
+// }
+
+// &--bottom .cmp-teaser__title {
+//   font-size: 1.25rem;
+//   font-family: "Ubuntu", sans-serif;
+//   color: #2b0a3d;
+// }
+
+// &--bottom .cmp-teaser {
+//   background-color: white;
+//   box-sizing: border-box;
+//   width: 100%;
+//   height: 673px;
+//   position: relative;
+//   cursor: pointer;
+//   display: grid;
+//   grid-auto-columns: 100%;
+//   grid-auto-rows: 50%;
+//   transition: all 0.5s ease;
+// }
+
+// &--bottom .cmp-teaser__description {
+//   color: #000;
+//   width: 85%;
+//   font-family: ubuntu, Verdana, Arial, sans-serif;
+//   letter-spacing: 0.2px;
+//   margin: 16px 0 24px;
+//   cursor: pointer;
+// }
+
+// &--bottom .cmp-teaser__image img {
+//   position: absolute;
+//   display: block;
+//   grid-column: 1;
+//   grid-row: 2;
+//   width: 100%;
+//   height: 100%;
+//   padding-top: 0.5rem;
+// }
+
+// &--bottom .cmp-teaser__action-link {
+//   border-radius: 50%;
+//   border: 2px solid #0070ad;
+//   text-decoration: none;
+//   padding: 4px 10px;
+//   font-size: 20px;
+//   background: none;
+// }
+// &--bottom .cmp-teaser__action-link:hover {
+//   border-radius: 50%;
+//   border: 2px solid #0070ad;
+//   text-decoration: none;
+//   padding: 4px 10px;
+//   font-size: 20px;
+//   color: white;
+//   background-color: #0070ad;
+
+//   .cmp-teaser__title-link {
+//     color: black;
+//     text-decoration: none;
+//   }
+// }
+
+// }
+
 .cmp-teaser--left {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem;
   .cmp-teaser {
-    background-color: transparent;
-    height: 20rem;
-    background-color: #f3f3f3;
-    &__image {
-      width: fit-content;
-      margin-right: 30rem;
-      padding-top: 20px;
-      padding-bottom: 50px;
-      padding-left: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 75% 2rem;
+    justify-items: center;
+    min-height: 5rem;
+    font-family: "Ubuntu", sans-serif;
+    // &:hover {
+    //   box-shadow: 0.5rem 0.5rem #999;
+    //   .cmp-teaser__title-link {
+    //     color: #0070ad;
+    //     text-decoration: underline;
+    //   }
+    // }
+    &__pretitle {
+      font-size: 0.8rem;
+      color: #999;
     }
     &__content {
-      font: 1.25rem/1.5 "ubuntu", sans-serif;
-      margin-left: 31rem;
-      margin-top: -24rem;
-      padding-right: 0.625rem;
-      padding-top: 0.625rem;
+      display: block;
+      height: 100%;
+      grid-column: 2;
+      grid-row: 1 / span 2;
+      text-align: left;
+      padding-top: 0.5rem;
+      padding-left: 1rem;
     }
-    &__title-link {
-      &:hover {
-        color: #2b0a3d;
+    &__title {
+      font-size: 1.25rem;
+      padding-top: 0;
+      margin: 0;
+    }
+    &__description {
+      font-size: 1rem;
+    }
+    &__action-link-container {
+      position: relative;
+    }
+    &__action-link {
+      position: relative;
+      top: auto;
+      border-radius: 50%;
+      border: 2px solid #0070ad;
+      text-decoration: none;
+      padding: 4px 10px;
+      font-size: 1.5rem;
+      background: none;
+      vertical-align: bottom;
+    }
+    &__action-link:hover {
+      border-radius: 50%;
+      border: 2px solid #0070ad;
+      text-decoration: none;
+      padding: 4px 10px;
+      font-size: 1.5rem;
+      color: white;
+      background-color: #0070ad;
+      margin-top: 12rem;
+      .cmp-teaser__title {
+        color: #0070ad;
         text-decoration: underline;
       }
     }
-  }
-}
-.cmp-teaser--right {
-  .cmp-teaser {
-    background-color: transparent;
-    height: 20rem;
-    background-color: #f3f3f3;
-  }
-  .cmp-teaser__image {
-    margin-left: 43rem;
-    padding: 20px;
-    width: 30rem;
-  }
-  .cmp-teaser__content {
-    font: 1.25rem/1.5 "Ubuntu", Verdana, Arial, sans-serif;
-    padding-left: 2.625rem;
-    padding-top: 0.625rem;
-    margin-right: 35rem;
-    margin-top: -20rem;
+    &__title-link {
+      color: black;
+      text-decoration: none;
+    }
+    &__image {
+      display: block;
+      grid-column: 1;
+      grid-row: 1 / span 2;
+      padding: 0.5rem;
+    }
   }
 }
 
-.cmp-teaser {
-  &:hover {
-    box-shadow: 10px 10px #999;
+.cmp-teaser--right {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  .cmp-teaser {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 75% 2rem;
+    justify-items: center;
+    min-height: 5rem;
+    font-family: "Ubuntu", sans-serif;
+    // &:hover {
+    //   box-shadow: 0.5rem 0.5rem #999;
+    //   .cmp-teaser__title-link {
+    //     color: #0070ad;
+    //     text-decoration: underline;
+    //   }
+    // }
+    &__pretitle {
+      font-size: 0.8rem;
+      color: #999;
+    }
+    &__content {
+      display: block;
+      height: 100%;
+      grid-column: 1;
+      grid-row: 1 / span 2;
+      text-align: left;
+      padding-top: 0.5rem;
+    }
+    &__title {
+      font-size: 1.25rem;
+      padding-top: 0;
+      margin: 0;
+    }
+    &__description {
+      font-size: 1rem;
+    }
+    &__action-link-container {
+      position: relative;
+    }
+    &__action-link {
+      position: relative;
+      top: auto;
+      border-radius: 50%;
+      border: 2px solid #0070ad;
+      text-decoration: none;
+      padding: 4px 10px;
+      font-size: 1.5rem;
+      background: none;
+      vertical-align: bottom;
+    }
+    &__action-link:hover {
+      border-radius: 50%;
+      border: 2px solid #0070ad;
+      text-decoration: none;
+      padding: 4px 10px;
+      font-size: 1.5rem;
+      color: white;
+      background-color: #0070ad;
+      margin-top: 12rem;
+      .cmp-teaser__title {
+        color: #0070ad;
+        text-decoration: underline;
+      }
+    }
+    &__title-link {
+      color: black;
+      text-decoration: none;
+    }
+    &__image {
+      display: block;
+      // height:100%;
+      grid-column: 2;
+      grid-row: 1 / span 2;
+      padding: 0.5rem;
+    }
   }
 }
-.cmp-teaser__title {
-  color: #2b0a3d;
-}
-.cmp-teaser__title-link {
-  font: 1.5rem/1.5 "Ubuntu", Verdana, Arial, sans-serif;
-  color: #2b0a3d;
-  text-decoration: none;
-  font-weight: bold;
-  &:hover {
-    color: #0070ad;
-    text-decoration: underline;
+
+.cmp-teaser--bottom {
+  margin: 2rem;
+  display: block;
+  .cmp-teaser {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    flex-basis: 30rem;
+    padding-top: 0.5rem;
+    flex-wrap: nowrap;
+    // display: grid;
+    // grid-template-columns: auto;
+    // grid-template-rows: 20rem 10rem;
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    &__content {
+      // display: block;
+      padding: 1rem;
+      flex: 1;
+      flex-basis: 20rem;
+      // grid-column: 1;
+      // grid-row: 1;
+    }
+    &__action-link-container {
+      justify-content: flex-end;
+    }
+    &__action-link {
+      border-radius: 50%;
+      border: 2px solid #0070ad;
+      text-decoration: none;
+      padding: 4px 10px;
+      font-size: 1.5rem;
+      background: none;
+    }
+    &__action-link:hover {
+      border-radius: 50%;
+      border: 2px solid #0070ad;
+      text-decoration: none;
+      padding: 4px 10px;
+      font-size: 1.5rem;
+      color: white;
+      background-color: #0070ad;
+      // margin-top: 12rem;
+      .cmp-teaser__title {
+        color: #0070ad;
+        text-decoration: underline;
+      }
+    }
+    &__pretitle {
+      font-size: 0.8rem;
+      color: #999;
+    }
+    &__title {
+      font-size: 1.25rem;
+      padding-top: 0;
+      margin: 0;
+    }
+    &__title-link {
+      color: black;
+      text-decoration: none;
+    }
+    &__description {
+      font-size: 1rem;
+    }
+    &__image {
+      justify-content: flex-end;
+      order: 2;
+      flex: 1;
+      .cmp-image {
+        display: block;
+        height: 40%;
+      }
+    }
+
+    // &__image{
+    //   position:relative;
+    //   display: block;
+    // }
+
+    // .cmp-image {
+    //   height: 40%;
+    //   // display: block;
+    //   position: absolute;
+    //   bottom: 0;
+    //   // top:50%;
+    // }
   }
 }
-.cmp-teaser__action-container {
-  margin-top: 9rem;
-  margin-top: 6rem;
-  margin-right: 2rem;
-}
-.cmp-teaser__action-link {
-  border-radius: 50%;
-  border: 2px solid #0070ad;
-  text-decoration: none;
-  padding: 0.25rem 0.625rem;
-  font-size: 1.25rem;
-  border-radius: 50;
-  &:hover {
-    background-color: #0070ad;
-    color: white;
-    text-decoration: none;
+
+.cmp-teaser--jobs {
+  display: block;
+  margin: 2rem;
+  width:15rem;
+  word-wrap: break-word;
+  .cmp-teaser {
+    height:6rem;
+    font-family: "Ubuntu", sans-serif;
+    border: 2px solid #54217b;
+    &__content {
+      padding:.5rem;
+      .cmp-teaser__pretitle {
+        font-size: 1rem;
+      }
+      .cmp-teaser__title {
+        font-size: 1.25rem;
+      }
+    }
+    &:hover {
+      color: white;
+    }
   }
 }

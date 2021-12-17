@@ -13,25 +13,8 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
-<style>
-  .cmp-search {
 
-    display: none;
-  }
-
-  .icon {
-    position: absolute;
-    top: 1rem;
-    left: 85rem;
-    display: flex;
-    flex-direction: row;
-    cursor: pointer;
-    font: 1.2rem/1.56 ubuntu, Verdana, Arial, sans-serif;
-
-  }
-</style>
-
-<div class="icon" id="icon">
+<div class="icon" id="iconsearch">
   <p>
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
       viewBox="0 0 16 16">
@@ -65,7 +48,7 @@
 
 
 <script>
-  var button = document.getElementById("icon");
+  var button = document.getElementById("iconsearch");
   var display = 1;
   button.addEventListener("click", function () {
     if (display === 1) {

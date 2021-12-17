@@ -4,71 +4,72 @@
     jcr:title="Properties"
     sling:resourceType="cq/gui/components/authoring/dialog">
     <content
-    jcr:primaryType="nt:unstructured"
-    sling:resourceType="granite/ui/components/foundation/container">
-<layout
         jcr:primaryType="nt:unstructured"
-        sling:resourceType="granite/ui/components/foundation/layouts/tabs"
-        type="nav"/>
-<items jcr:primaryType="nt:unstructured">
-    <desktop
-            jcr:primaryType="nt:unstructured"
-            jcr:title="Desktop"
-            sling:resourceType="granite/ui/components/foundation/section">
+        sling:resourceType="granite/ui/components/foundation/container">
         <layout
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
-        <items jcr:primaryType="nt:unstructured">
-            <column
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="granite/ui/components/foundation/container">
-                <items jcr:primaryType="nt:unstructured">
-                    <imagePathDesktop1
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/foundation/form/fileupload"
-                            autoStart="{Boolean}false"
-                            class="cq-droptarget"
-                            fieldLabel="Desktop"
-                            fileNameParameter="./imagePathDesktop"
-                            mimeTypes="[image]"
-                            multiple="{Boolean}true"
-                            name="./imgDesktop"
-                            title="Image Path"
-                            uploadUrl="${suffix.path}"
-                            useHTML5="{Boolean}true"/>
-                </items>
-            </column>
-        </items>
-    </desktop>
-    <mobile
             jcr:primaryType="nt:unstructured"
-            jcr:title="Mobile"
-            sling:resourceType="granite/ui/components/foundation/section">
-        <layout
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
         <items jcr:primaryType="nt:unstructured">
-            <column
+            <desktop
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Desktop"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="granite/ui/components/foundation/container">
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
                 <items jcr:primaryType="nt:unstructured">
-                    <imagePathMobile2
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/foundation/form/fileupload"
-                            autoStart="{Boolean}false"
-                            class="cq-droptarget"
-                            fieldLabel="Mobile"
-                            fileNameParameter="./imagePathMobile"
-                            fileReferenceParameter="./imageReferenceMob"
-                            mimeTypes="[image]"
-                            multiple="{Boolean}false"
-                            name="./imgMobile"
-                            title="Image Path"
-                            uploadUrl="${suffix.path}"
-                            useHTML5="{Boolean}true"/>
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <imagePathDesktop1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                fieldLabel="Desktop"
+                                fileNameParameter="./imagePathDesktop"
+                                mimeTypes="[image]"
+                                multiple="{Boolean}true"
+                                name="./imgDesktop"
+                                title="Image Path"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"/>
+                        </items>
+                    </column>
                 </items>
-            </column>
+            </desktop>
+            <mobile
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Mobile"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <imagePathMobile2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                fieldLabel="Mobile"
+                                fileNameParameter="./imagePathMobile"
+                                fileReferenceParameter="./imageReferenceMob"
+                                mimeTypes="[image]"
+                                multiple="{Boolean}false"
+                                name="./imgMobile"
+                                title="Image Path"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"/>
+                        </items>
+                    </column>
+                </items>
+            </mobile>
         </items>
-    </mobile>
-</items> </content>
+    </content>
 </jcr:root>
