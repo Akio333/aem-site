@@ -1,0 +1,66 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2017 Adobe
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+
+<div class="icon" id="iconsearch">
+  <p>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+      viewBox="0 0 16 16">
+      <path
+        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+    </svg>
+    Search
+  </p>
+</div>
+<section data-sly-use.search="com.adobe.cq.wcm.core.components.models.Search" id="${search.id}" class="cmp-search"
+  role="search" data-cmp-is="search" data-cmp-min-length="${search.searchTermMinimumLength}"
+  data-cmp-results-size="${search.resultsSize}" id="srch">
+  <form class="cmp-search__form" data-cmp-hook-search="form" method="get"
+    action="${currentPage.path @ addSelectors=['searchresults'], extension='json', suffix = search.relativePath}"
+    autocomplete="off">
+    <div class="cmp-search__field">
+      <i class="cmp-search__icon" data-cmp-hook-search="icon"></i>
+      <span class="cmp-search__loading-indicator" data-cmp-hook-search="loadingIndicator"></span>
+      <input class="cmp-search__input" data-cmp-hook-search="input" type="text" name="fulltext"
+        placeholder="${'Search' @ i18n}" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+        aria-invalid="false" aria-expanded="false">
+      <button class="cmp-search__clear" data-cmp-hook-search="clear" aria-label="${'Clear' @ i18n}">
+        <i class="cmp-search__clear-icon"></i>
+      </button>
+    </div>
+  </form>
+  <div class="cmp-search__results" aria-label="${'Search results' @ i18n}" data-cmp-hook-search="results" role="listbox"
+    aria-multiselectable="false"></div>
+  <sly data-sly-include="itemTemplate.html" />
+</section>
+
+
+<script>
+  var button = document.getElementById("iconsearch");
+  var display = 1;
+  button.addEventListener("click", function () {
+    if (display === 1) {
+      console.log(display);
+      document.getElementById("srch").style.display = "block";
+      display = 0;
+    }
+    else {
+      console.log(display);
+      document.getElementById("srch").style.display = "none";
+      display = 1;
+    }
+
+  })
+</script>

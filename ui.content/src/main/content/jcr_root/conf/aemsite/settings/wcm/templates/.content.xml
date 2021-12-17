@@ -7,4 +7,9 @@
     <page-content/>
     <xf-web-variation/>
     <rep:policy/>
+    <homepage-templet/>
+    <newhometemplet/>
+    <testpagetemplet/>
+    <testtemplet/>
+    <homepagetemplate/>
 </jcr:root>

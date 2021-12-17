@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-12-06T11:19:37.685+05:30"
+        cq:lastModified="{Date}2021-12-17T17:23:00.536+05:30"
         cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/aemsite/settings/wcm/templates/xf-web-variation"
@@ -12,10 +12,93 @@
         jcr:title="Header"
         sling:resourceType="aemsite/components/xfpage">
         <root
+            jcr:lastModified="{Date}2021-12-17T09:23:15.812+05:30"
+            jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aemsite/components/container"
-            layout="simple">
+            layout="responsiveGrid">
             <logo/>
+            <image
+                cq:styleIds="[1639741866835]"
+                jcr:created="{Date}2021-12-17T09:04:28.774+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-17T09:29:08.285+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemsite/components/image"
+                fileReference="/content/dam/aemsite/logos/cg_logo.svg">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="2"/>
+                </cq:responsive>
+            </image>
+            <languagenavigation
+                jcr:created="{Date}2021-12-17T09:54:45.615+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-17T15:25:57.241+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemsite/components/languagenavigation"
+                navigationRoot="/content/aemsite/us/language-master"
+                structureDepth="2"
+                text="Select which site you would like to reach;">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
+            </languagenavigation>
+            <search
+                jcr:created="{Date}2021-12-17T09:52:35.764+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-17T09:53:00.059+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemsite/components/search"
+                searchRoot="/content/aemsite/us/en">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
+            </search>
+            <separator
+                jcr:created="{Date}2021-12-17T15:27:00.668+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-17T15:27:00.668+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemsite/components/separator">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="11"/>
+                </cq:responsive>
+            </separator>
+            <navigation
+                jcr:created="{Date}2021-12-17T09:25:49.874+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-17T09:31:19.680+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemsite/components/navigation"
+                collectAllPages="false"
+                disableShadowing="false"
+                navigationRoot="/content/aemsite/us/en/capgemini-website"
+                structureDepth="3"
+                structureStart="1">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
+            </navigation>
         </root>
     </jcr:content>
 </jcr:root>

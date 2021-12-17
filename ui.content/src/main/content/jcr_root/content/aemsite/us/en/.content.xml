@@ -4,7 +4,7 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2021-12-13T10:57:58.422+05:30"
+        cq:lastModified="{Date}2021-12-16T15:57:13.559+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aemsite/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
@@ -384,7 +384,14 @@
                         jcr:primaryType="nt:unstructured"
                         jcr:title="See more openings"
                         sling:resourceType="aemsite/components/button"
-                        link="/content/aemsite/us/en/industries"/>
+                        link="/content/aemsite/us/en/industries">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="12"/>
+                        </cq:responsive>
+                    </button_1826969301>
                     <title
                         jcr:created="{Date}2021-12-09T17:15:48.048+05:30"
                         jcr:createdBy="admin"
@@ -425,6 +432,7 @@
                         jcr:title="Research"
                         sling:resourceType="aemsite/components/title"/>
                     <title_1595473427
+                        cq:styleIds="[1639125384537]"
                         jcr:created="{Date}2021-12-10T11:04:36.984+05:30"
                         jcr:createdBy="admin"
                         jcr:lastModified="{Date}2021-12-10T11:04:51.837+05:30"
@@ -494,4 +502,6 @@
     <insights/>
     <aboutus/>
     <careers/>
+    <capgemini-website/>
+    <home-page/>
 </jcr:root>
