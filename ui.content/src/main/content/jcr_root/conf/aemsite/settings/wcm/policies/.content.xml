@@ -75,7 +75,7 @@
                     </plugins>
                 </policy_651483963895698>
                 <policy_185732429120200
-                    jcr:lastModified="{Date}2021-12-17T17:22:39.343+05:30"
+                    jcr:lastModified="{Date}2021-12-21T10:00:52.378+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="imagepolicy"
@@ -128,6 +128,11 @@
                                     cq:styleClasses="cmp-image--padded"
                                     cq:styleId="1639741866835"
                                     cq:styleLabel="Padded"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-image--size"
+                                    cq:styleId="1640061037789"
+                                    cq:styleLabel="size"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
@@ -274,7 +279,7 @@
                     </cq:styleGroups>
                 </policy_344635007025500>
                 <policy_96520118936900
-                    jcr:lastModified="{Date}2021-12-16T17:22:24.580+05:30"
+                    jcr:lastModified="{Date}2021-12-21T10:12:03.431+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="titlepolicy"
@@ -297,6 +302,11 @@
                                     cq:styleClasses="cmp-title--white"
                                     cq:styleId="1639653657713"
                                     cq:styleLabel="title white"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="cmp-title--none"
+                                    cq:styleId="1640061710121"
+                                    cq:styleLabel="none"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>

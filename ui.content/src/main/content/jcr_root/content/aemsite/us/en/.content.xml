@@ -4,8 +4,8 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2021-12-16T15:57:13.559+05:30"
-        cq:lastModifiedBy="admin"
+        cq:lastModified="{Date}2021-12-20T17:36:15.815+05:30"
+        cq:lastModifiedBy="reference-adjustment-service"
         cq:template="/conf/aemsite/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
         jcr:title="en"
@@ -309,7 +309,7 @@
                                 linkUrl="/content/aemsite/us/en"/>
                             <item1
                                 jcr:primaryType="nt:unstructured"
-                                linkUrl="/content/aemsite/us/en/services"/>
+                                linkUrl="/content/aemsite/us/en/home/services"/>
                         </items>
                     </navigation>
                     <navbar_506114513
@@ -354,7 +354,7 @@
                         <actions jcr:primaryType="nt:unstructured">
                             <item0
                                 jcr:primaryType="nt:unstructured"
-                                link="/content/aemsite/us/en/industries"
+                                link="/content/aemsite/us/en/home/industries"
                                 text=">"/>
                         </actions>
                     </heroimage>
@@ -367,7 +367,7 @@
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Show all"
                         sling:resourceType="aemsite/components/button"
-                        link="/content/aemsite/us/en/industries">
+                        link="/content/aemsite/us/en/home/industries">
                         <cq:responsive jcr:primaryType="nt:unstructured">
                             <default
                                 jcr:primaryType="nt:unstructured"
@@ -384,7 +384,7 @@
                         jcr:primaryType="nt:unstructured"
                         jcr:title="See more openings"
                         sling:resourceType="aemsite/components/button"
-                        link="/content/aemsite/us/en/industries">
+                        link="/content/aemsite/us/en/home/industries">
                         <cq:responsive jcr:primaryType="nt:unstructured">
                             <default
                                 jcr:primaryType="nt:unstructured"
@@ -496,12 +496,7 @@
                 sling:resourceType="aemsite/components/title"/>
         </root>
     </jcr:content>
-    <industries/>
-    <services/>
-    <partners/>
-    <insights/>
-    <aboutus/>
-    <careers/>
     <capgemini-website/>
     <home-page/>
+    <home/>
 </jcr:root>

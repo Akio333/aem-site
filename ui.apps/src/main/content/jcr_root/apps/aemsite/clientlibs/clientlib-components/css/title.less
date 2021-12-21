@@ -25,4 +25,18 @@
       background-color: black;
     }
   }
+  &--none & {
+    color: black;
+    padding: 0px;
+    &__text {
+      font-size: 1.2rem;
+      padding-left:15px;
+      // padding-top:-10px;
+    }
+    &::after {
+      background-color: none;
+      width: 0px;
+      height: 0px;
+    }
+  }
 }

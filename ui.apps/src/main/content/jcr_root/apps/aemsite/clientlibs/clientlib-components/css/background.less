@@ -3,13 +3,12 @@
 .bg-gray {
   // margin: 0.5rem;
   background-color: #ececec;
-  color:black;
-
+  color: black;
 }
 .bg-white {
   // margin: 0.5rem;
   background-color: #ffffff;
-  color:black;
+  color: black;
 }
 .bg-dark {
   // margin: 0.5rem;
@@ -44,9 +43,33 @@
   // width: fit-content;
 }
 
-.cmp-image--padded{
+.cmp-image--padded {
   display: block;
-  .cmp-image{
-    padding:.5rem;
+  .cmp-image {
+    box-sizing: border-box;
+    padding: 1.5rem;
   }
 }
+.cmp-image--size {
+  .cmp-image {
+    img {
+      width: 150px;
+      height: 40px;
+      // border: 2px solid red;
+    }
+  }
+}
+
+// .cmp-separator {
+//   border:2px solid red;
+// }
+.cmp-separator__horizontal-rule {
+  border-top:1px solid #ececec;
+  border-left:0;
+  border-right:0;
+  border-bottom:0;
+}
+// .cmp-experiencefragment{
+//   // border:2px solid red;
+//   padding:0;
+// }

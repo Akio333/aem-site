@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-12-17T17:23:48.769+05:30"
+        cq:lastModified="{Date}2021-12-21T10:34:43.754+05:30"
         cq:lastModifiedBy="admin"
         cq:tags="[experience-fragments:variation/web]"
         cq:template="/conf/aemsite/settings/wcm/templates/xf-web-variation"
@@ -35,7 +35,7 @@
             <footer
                 jcr:created="{Date}2021-12-17T09:36:27.278+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2021-12-17T09:44:14.698+05:30"
+                jcr:lastModified="{Date}2021-12-20T10:42:27.372+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemsite/components/footer">
@@ -127,13 +127,15 @@
                 </outerGroup>
             </footer>
             <title
+                cq:styleIds="[1640061710121]"
                 jcr:created="{Date}2021-12-17T09:36:51.766+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2021-12-17T09:38:32.530+05:30"
+                jcr:lastModified="{Date}2021-12-21T10:23:05.328+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Our Brands:"
-                sling:resourceType="aemsite/components/title">
+                sling:resourceType="aemsite/components/title"
+                type="h3">
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
                         jcr:primaryType="nt:unstructured"
@@ -144,11 +146,17 @@
             <image_978379031
                 jcr:created="{Date}2021-12-17T09:37:15.382+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2021-12-17T09:39:03.278+05:30"
+                jcr:lastModified="{Date}2021-12-21T10:27:32.141+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemsite/components/image"
-                fileReference="/content/dam/aemsite/logos/capgemini_engineering.svg">
+                alt="alt"
+                altValueFromDAM="false"
+                displayPopupTitle="false"
+                fileReference="/content/dam/aemsite/logos/capgemini_engineering.svg"
+                isDecorative="false"
+                linkURL="/content/aemsite/us/en/home-page"
+                titleValueFromDAM="false">
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
                         jcr:primaryType="nt:unstructured"
@@ -160,11 +168,17 @@
                 cq:styleIds="[1639741866835]"
                 jcr:created="{Date}2021-12-17T09:37:35.017+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2021-12-17T09:39:11.248+05:30"
+                jcr:lastModified="{Date}2021-12-21T10:33:39.283+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemsite/components/image"
-                fileReference="/content/dam/aemsite/logos/capgemini-invent.svg">
+                alt="alt"
+                altValueFromDAM="false"
+                displayPopupTitle="false"
+                fileReference="/content/dam/aemsite/logos/capgemini-invent.svg"
+                isDecorative="false"
+                linkURL="/content/aemsite/us/en/home-page"
+                titleValueFromDAM="false">
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
                         jcr:primaryType="nt:unstructured"
@@ -173,14 +187,20 @@
                 </cq:responsive>
             </image_42282073>
             <image_1058833197
-                cq:styleIds="[1639741866835]"
+                cq:styleIds="[1640061037789]"
                 jcr:created="{Date}2021-12-17T09:37:44.174+05:30"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2021-12-17T09:39:16.038+05:30"
+                jcr:lastModified="{Date}2021-12-21T10:34:43.667+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemsite/components/image"
-                fileReference="/content/dam/aemsite/logos/sogeti-by-capgemini.svg">
+                alt="alt"
+                altValueFromDAM="false"
+                displayPopupTitle="false"
+                fileReference="/content/dam/aemsite/logos/sogeti-by-capgemini.svg"
+                isDecorative="false"
+                linkURL="/content/aemsite/us/en/home-page/aboutus"
+                titleValueFromDAM="false">
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
                         jcr:primaryType="nt:unstructured"
